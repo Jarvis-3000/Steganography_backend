@@ -15,13 +15,7 @@ const userSchema = mongoose.Schema({
     },
     password: {
         type : String, 
-        required : true,
-        validate:[{validator:validator.isStrongPassword,msg:"Weak Password"}]
-    },
-    mobileNumber: {
-        type:String, 
-        required:true,
-        validate: [{ validator: validator.isMobilePhone, msg: "Invalid Phone no" }],
+        required : true
     }
 },
 {
